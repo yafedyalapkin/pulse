@@ -54,9 +54,9 @@ const slider = tns({
     nav: false
 });
 
-document.querySelector('.prev').addEventListener('click', function () {
-    slider.goTo('prev');
-});
+// document.querySelector('.prev').addEventListener('click', function () {
+//     slider.goTo('prev');
+// });
 
 document.querySelector('.next').addEventListener('click', function () {
     slider.goTo('next');
@@ -100,7 +100,6 @@ $(document).ready(function(){
     // модальные окна
     $('[data-modal=consultation]').on('click', function() { /* при нажатии на кнопку */
         $('.owerlay, #consultation').fadeIn('fast');
-        // $('.owerlay, #consultation').fadeIn('fast');
     });
 
     $('.modal__close').on('click', function() {  /* при нажатии на крестик */
@@ -110,17 +109,6 @@ $(document).ready(function(){
     $('.button_mini').on('click', function() {  /* 2-ое окно с другой кнопкой */
         $('.owerlay, #order').fadeIn('fast');
     });
-
-
-
-    // тест
-    // $('.button_submit').on('click', function() {  /* при нажатии на крестик */
-    //     $('#order').fadeOut('fast');
-    // })
-  
-
-
-
 
     $('.button_mini').each(function(i) { /* функция для того чтобы каждая кнопка из карточки потягивала подзаголовок из из той же карточки */
         $(this).on('click', function() {
@@ -165,7 +153,6 @@ $(document).ready(function(){
     $('input[name=phone]').mask("+7 (999) 999-99-99");
 
 
-
     // отправляем данные со всех форм (модальных окон)
     $('form').submit(function(e) {
         e.preventDefault();
@@ -187,12 +174,6 @@ $(document).ready(function(){
         });
         return false;
     });
-
-
-
-
-
-
 
 
 

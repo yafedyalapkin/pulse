@@ -1,0 +1,62 @@
+.advantage {
+    background-color: #F6F6F6; 
+
+    &__icons {
+        display: flex;
+        margin-top: 65px;
+    }
+    &__icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 60px;
+        // &:last-child {
+        &:nth-child(3) {
+            margin-right: 0px;
+        }
+    }
+    &__descr {
+        margin-top: 35px;
+        width: 277px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #0D0D0D;
+        margin-bottom: 80px;
+        span {
+            text-decoration-line: underline;
+            color: #FF0000;
+        }
+    }
+    
+
+    &__head {
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        color: #0D0D0D;
+        margin-bottom: 20px;
+        
+    }
+
+    &__i {
+        cursor: pointer;
+        &_animated {
+            &:hover {
+                animation-name: heartbeat; /* привязываем */
+                animation-duration: 1.5s; /* время анимации */
+                animation-timing-function: ease; /* стиль анимации */
+                animation-iteration-count: infinite; /* бесконечная */
+
+                // или
+
+                animation: heartbeat 1.5s ease infinite;
+            }
+        }
+    }
+}
+
+
+
+

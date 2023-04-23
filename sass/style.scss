@@ -1,0 +1,88 @@
+// подключаем что-то из бутстрапа, слайдер и анимацию
+@import 'libs/bootstrap-reboot.min'; 
+@import 'libs/slick';
+@import 'libs/animate.min'; /*  <!-- сss библиотека для анимаций --> */
+
+
+
+@import 'base/variables';
+
+
+/* анимация иконок в секции 'эдвантэдж' */
+@import 'base/animation';
+
+
+
+
+* {
+    font-family: 'MuseoModerno', sans-serif; 
+}
+
+.container {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+    
+}
+
+/* 1 экран 
+========================================================= */
+@import 'blocks/header';
+@import 'blocks/promo';
+
+@import 'blocks/buttons';
+
+
+
+/* 2 экран 
+========================================================= */
+@import 'blocks/advantage';
+
+@import 'blocks/titles';
+
+
+/* 3 экран 
+========================================================= */
+@import 'blocks/consultation';
+
+@import 'blocks/forms';
+
+
+/* 4 экран 
+========================================================= */
+@import 'blocks/carousel';
+
+
+/* 5 экран 
+========================================================= */
+@import 'blocks/catalog';
+
+
+/* 6 экран 
+========================================================= */
+@import 'blocks/reviews';
+
+
+/* футер
+========================================================= */
+@import 'blocks/footer';
+
+
+/* модальные окна */
+@import 'blocks/modal';
+
+
+/* икнока вверх */
+@import 'blocks/pageup';
+
+
+
+
+
+
+// чтобы адаптация перекрывала дефолтные правила, она должна идти в самом конце
+// ==========================================================================
+@import 'blocks/media';
+
+
+
